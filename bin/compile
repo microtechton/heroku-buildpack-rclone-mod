@@ -113,7 +113,7 @@ cd "$VENDOR_DIR"
 mkdir -p gclone
 cd gclone
 cp "$CACHE_DIR/$FILE" .
-gunzip -qqj "$FILE"
+gunzip "$FILE"
 rm -rf "$FILE"
 chmod 777 gclone
 
