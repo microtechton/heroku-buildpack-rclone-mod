@@ -89,8 +89,8 @@ echo "-----> Installing Gclone"
 BUILD_DIR=$1
 CACHE_DIR=$2
 VENDOR_DIR="vendor"
-FILE="gclone_1.51.0-mod1.3.1_Linux_arm64.gz"
-DOWNLOAD_URL="https://github.com/donwa/gclone/releases/download/v1.51.0-mod1.3.1/$FILE"
+FILE="gclone.zip"
+DOWNLOAD_URL="https://github.com/KamalYadav98/heroku-buildpack-rclone-mod/blob/master/$FILE"
 
 mkdir -p "$CACHE_DIR"
 
@@ -113,7 +113,7 @@ cd "$VENDOR_DIR"
 mkdir -p gclone
 cd gclone
 cp "$CACHE_DIR/$FILE" .
-gunzip "$FILE"
+unzip -qqj "$FILE"
 rm -rf "$FILE"
 chmod 777 gclone
 
