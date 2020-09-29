@@ -11,8 +11,8 @@ echo "-----> Installing rclone"
 BUILD_DIR=$1
 CACHE_DIR=$2
 VENDOR_DIR="vendor"
-FILE="rclone-v1.52.3-linux-amd64.zip"
-DOWNLOAD_URL="https://github.com/rclone/rclone/releases/download/v1.52.3/$FILE"
+FILE="rclone-v1.53.1-linux-amd64.zip"
+DOWNLOAD_URL="https://github.com/rclone/rclone/releases/download/v1.53.1/$FILE"
 
 mkdir -p "$CACHE_DIR"
 
