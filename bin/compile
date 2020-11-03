@@ -11,8 +11,8 @@ echo "-----> Installing rclone"
 BUILD_DIR=$1
 CACHE_DIR=$2
 VENDOR_DIR="vendor"
-FILE="rclone-v1.53.1-linux-amd64.zip"
-DOWNLOAD_URL="https://github.com/rclone/rclone/releases/download/v1.53.1/$FILE"
+FILE="rclone-v1.53.2-linux-amd64.zip"
+DOWNLOAD_URL="https://github.com/rclone/rclone/releases/download/v1.53.2/$FILE"
 
 mkdir -p "$CACHE_DIR"
 
@@ -43,15 +43,15 @@ echo "exporting PATH" | indent
 PROFILE_PATH="$BUILD_DIR/.profile.d/rclone.sh"
 mkdir -p "$(dirname "$PROFILE_PATH")"
 echo 'export PATH="$PATH:${HOME}/vendor/rclone"' >> $PROFILE_PATH
-echo "Rclone-mod by Antrax installed"  | indent
+echo "Rclone v1.53.2 has been installed!"  | indent
 
 ###### install Fclone ##########
 echo "-----> Installing Fclone"
 BUILD_DIR=$1
 CACHE_DIR=$2
 VENDOR_DIR="vendor"
-FILE="fclone-v0.3.1-linux-amd64.zip"
-DOWNLOAD_URL="https://github.com/mawaya/rclone/releases/download/fclone-v0.3.1/$FILE"
+FILE="fclone-v0.4.1-linux-amd64.zip"
+DOWNLOAD_URL="https://github.com/mawaya/rclone/releases/download/fclone-v0.4.1/$FILE"
 
 mkdir -p "$CACHE_DIR"
 
@@ -82,7 +82,7 @@ echo "exporting PATH" | indent
 PROFILE_PATH="$BUILD_DIR/.profile.d/fclone.sh"
 mkdir -p "$(dirname "$PROFILE_PATH")"
 echo 'export PATH="$PATH:${HOME}/vendor/fclone"' >> $PROFILE_PATH
-echo "Fclone Buildpack by Antrax installed"  | indent
+echo "Fclone v0.4.1 has been installed!"  | indent
 
 ###### install Gclone ##########
 echo "-----> Installing Gclone"
@@ -90,7 +90,7 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 VENDOR_DIR="vendor"
 FILE="gclone.zip"
-DOWNLOAD_URL="https://raw.githubusercontent.com/KamalYadav98/heroku-buildpack-rclone-mod/master/$FILE"
+DOWNLOAD_URL="https://raw.githubusercontent.com/microtechton/heroku-buildpack-rclone-mod/master/$FILE"
 
 mkdir -p "$CACHE_DIR"
 
@@ -121,7 +121,7 @@ echo "exporting PATH" | indent
 PROFILE_PATH="$BUILD_DIR/.profile.d/gclone.sh"
 mkdir -p "$(dirname "$PROFILE_PATH")"
 echo 'export PATH="$PATH:${HOME}/vendor/gclone"' >> $PROFILE_PATH
-echo "gclone Buildpack by Donwa installed"  | indent
+echo "gclone v1.51.0-mod1.3.1 has been installed!"  | indent
 
 ###### install aria2 ##########
 echo "-----> Installing Aria2"
